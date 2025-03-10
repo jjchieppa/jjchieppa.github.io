@@ -5,58 +5,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jeff Chieppa</title>
     <style>
+        /* Global Styles */
         body {
             font-family: Arial, sans-serif;
-            max-width: 600px;
-            margin: auto;
-            text-align: center;
-            padding-top: 50px;
+            background-color: #f8f8f8;
+            display: flex;
+            margin: 0;
+            height: 100vh;
         }
-        h1 {
-            color: #333;
-        }
-        p {
-            font-size: 18px;
-        }
-        a {
-            display: inline-block;
-            margin: 10px;
-            font-size: 18px;
-            text-decoration: none;
-            color: #0073b1;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .cv-button {
-            display: inline-block;
-            padding: 10px 15px;
-            margin-top: 20px;
-            font-size: 18px;
+
+        /* Sidebar Styles */
+        .sidebar {
+            width: 200px;
+            background-color: #333;
             color: white;
-            background-color: #0073b1;
-            border-radius: 5px;
-            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            padding-top: 20px;
+            text-align: center;
         }
-        .cv-button:hover {
-            background-color: #005582;
+
+        .sidebar a {
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+            display: block;
+            font-size: 18px;
+        }
+
+        .sidebar a:hover {
+            background-color: #575757;
+        }
+
+        /* Main Content */
+        .content {
+            flex-grow: 1;
+            padding: 20px;
+            text-align: center;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        /* Banner */
+        .banner {
+            font-size: 24px;
+            font-weight: bold;
+            background-color: #0073b1;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Hide content sections by default */
+        .section {
+            display: none;
+        }
+
+        /* Show the first section by default */
+        #biography {
+            display: block;
         }
     </style>
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('.section').forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
 </head>
 <body>
 
-    <h1>Jeff Chieppa, PhD</h1>
-    <p>I am a research scientist focusing on all things plants: climate, physiology, pathology. From 2022-2025 I worked on an ML/AI team in crop protection/forecasting.
-        Now, I'm looking to re-enter the work of ecology using my newfound data science toolbox.</p>
+    <!-- Sidebar Navigation -->
+    <div class="sidebar">
+        <a href="#" onclick="showSection('biography')">Biography</a>
+        <a href="#" onclick="showSection('research')">My Research</a>
+        <a href="#" onclick="showSection('links')">Links</a>
+    </div>
 
-    <h2>Links</h2>
-    <p>
-        <a href="https://scholar.google.com.au/citations?user=Q_dI8LcAAAAJ&hl=en" target="_blank">Google Scholar</a> |
-        <a href="https://www.linkedin.com/in/jeff-chieppa-phd-873365179/" target="_blank">LinkedIn</a>
-    </p>
+    <!-- Main Content -->
+    <div class="content">
+        <div class="banner">Jeff Chieppa, PhD</div>
 
-    <h2>CV</h2>
-    <p><a href="https://jjchieppa.github.io/Chieppa%20CV_2025-03-07.pdf" class="cv-button" target="_blank">Download CV</a></p>
+        <!-- Biography Section -->
+        <div id="biography" class="section">
+            <h2>Biography</h2>
+            <p>I am a research scientist passionate about plant ecology, climate, and the intersection of data science with biological systems.</p>
+            <p>My background includes work in plant physiology, ecophysiology, and crop protection, leveraging machine learning and AI to enhance agricultural forecasting.</p>
+            <p>From 2022 to 2025, I was part of a machine learning team focused on predicting disease outcomes and optimizing treatment strategies for crops. Before that, I explored the physiological responses of plants to environmental stressors, including drought, ozone exposure, and soil pathogens.</p>
+            <p>Now, I am eager to apply my data science toolbox back into the world of ecology and environmental research, integrating large-scale datasets with predictive modeling to tackle pressing challenges in conservation and agriculture.</p>
+        </div>
+
+        <!-- My Research Section -->
+        <div id="research" class="section">
+            <h2>My Research</h2>
+            <p>[To be filled in later]</p>
+        </div>
+
+        <!-- Links Section -->
+        <div id="links" class="section">
+            <h2>Links</h2>
+            <p>
+                <a href="https://scholar.google.com.au/citations?user=Q_dI8LcAAAAJ&hl=en" target="_blank">Google Scholar</a>
+                <br>
+                <a href="https://www.linkedin.com/in/jeff-chieppa-phd-873365179/" target="_blank">LinkedIn</a>
+                <br>
+                <a href="https://jjchieppa.github.io/Chieppa%20CV_2025-03-07.pdf" target="_blank">Download CV</a>
+            </p>
+        </div>
+    </div>
 
 </body>
 </html>
