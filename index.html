@@ -16,12 +16,12 @@
 
         /* Sidebar Styles */
         .sidebar {
-            width: 200px; /* Slightly smaller sidebar */
+            width: 180px; /* Smaller sidebar */
             background-color: #333;
             color: white;
             display: flex;
             flex-direction: column;
-            padding-top: 15px;
+            padding-top: 12px;
             text-align: center;
             position: fixed;
             height: 100vh;
@@ -31,10 +31,10 @@
 
         .sidebar a {
             color: white;
-            padding: 12px;
+            padding: 10px;
             text-decoration: none;
             display: block;
-            font-size: 18px; /* Slightly smaller sidebar text */
+            font-size: 16px; /* Smaller sidebar text */
         }
 
         .sidebar a:hover {
@@ -43,28 +43,28 @@
 
         /* Main Content */
         .content {
-            width: 90%;  
-            max-width: 1300px; /* Slightly smaller max width */
+            width: 85%;
+            max-width: 1100px; /* Smaller max width */
             margin: auto;
-            padding: 20px;
-            margin-left: 220px; /* Adjust for smaller sidebar */
+            padding: 15px;
+            margin-left: 200px; /* Adjust for smaller sidebar */
             text-align: center;
         }
 
-        /* Fix header image size across all pages */
+        /* Header Image */
         .header-img {
             width: 100%;
-            height: 280px; /* Smaller header image */
+            height: 220px; /* Smaller header image */
             object-fit: cover;
-            border-radius: 8px;
+            border-radius: 6px;
         }
 
         /* Banner */
         .banner {
-            font-size: 28px; /* Smaller banner */
+            font-size: 24px; /* Smaller banner */
             font-weight: bold;
             color: #333;
-            padding: 15px;
+            padding: 12px;
             text-align: center;
         }
 
@@ -83,27 +83,27 @@
             display: flex;
             align-items: flex-start;
             justify-content: center;
-            gap: 60px; /* Keep spacing */
+            gap: 50px; /* Keep spacing */
         }
         
         .bio-text {
-            width: 60%; /* Make the text box wider */
-            max-width: 900px;
+            width: 65%; /* Wider text box */
+            max-width: 700px;
             text-align: left;
-            font-size: 16px; /* Smaller text for compact view */
-            line-height: 1.5;
+            font-size: 14px; /* Smaller text */
+            line-height: 1.4;
         }
 
         /* Smaller images */
         .bio-container img {
-            width: 200px; /* Reduce image size */
+            width: 160px; /* Reduce image size */
             height: auto;
-            border-radius: 8px;
+            border-radius: 6px;
         }
 
         /* Smaller Yellowstone cycling photo */
         .cycling-img {
-            width: 450px !important; /* Reduce further */
+            width: 380px !important; /* Reduce further */
             height: auto;
         }
 
@@ -111,22 +111,49 @@
         .bio-bottom-imgs {
             display: flex;
             justify-content: center;
-            gap: 20px;
-            margin-top: 30px;
+            gap: 15px;
+            margin-top: 20px;
         }
 
         .bio-bottom-imgs img {
-            width: 220px; /* Smaller bottom images */
+            width: 180px; /* Smaller bottom images */
             height: auto;
-            border-radius: 8px;
+            border-radius: 6px;
         }
 
         /* Captions */
         .caption {
-            font-size: 14px; /* Smaller captions */
+            font-size: 12px; /* Smaller captions */
             color: #555;
-            margin-top: 6px;
+            margin-top: 4px;
             font-style: italic;
+        }
+
+        /* Research Sections */
+        .research-section {
+            text-align: left;
+            max-width: 750px; /* More compact */
+            margin: 25px auto;
+        }
+
+        .research-section h3 {
+            font-size: 18px; /* Smaller research headers */
+            color: #333;
+            border-bottom: 1px solid #0073b1;
+            padding-bottom: 4px;
+            margin-bottom: 8px;
+        }
+
+        /* Links Section */
+        .links-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .links-container a {
+            font-size: 14px;
+            display: block;
+            margin: 5px;
         }
 
     </style>
@@ -168,11 +195,7 @@
                 <div class="bio-text">
                     <p>I am a research scientist with a deep passion for plant ecology, climate science, and the integration of data science with biological systems. Over the course of my career, I have worked across multiple scales of biological organization, from photosynthetic biochemistry and organ-level function to plant-insect interactions, community dynamics, and continental-scale forecasting.</p>
 
-                    <p>My research journey began in 2011 as an intern studying wildlife movement ecology in New York City, but I quickly found myself drawn to plant-environment interactions. Since then, I have conducted field and laboratory studies in southern pine forests, the Australian Outback, Florida mangroves, Midwestern prairies, and countless greenhouses and growth chambers, always seeking to understand how plants function under changing environmental conditions.</p>
-
-                    <p>Following my PhD and three postdoctoral roles, I transitioned away from university research and joined the Advanced Modeling and Artificial Intelligence team for Corteva Agriscience. There I expanded my expertise beyond plant science to include predictive analytics and ML for agricultural pests/pathogens. Along the way, I deepened my skills in R and developed new skills in Python, enabling me to provide biological expertise to big-data problems in a variety of contexts.</p>
-
-                    <p>Now, I am eager to return to ecology and environmental research, bringing my multiscale perspective and computational expertise to address pressing challenges in plant ecology, climate adaptation, and conservation.</p>
+                    <p>My research journey began in 2011 as an intern studying wildlife movement ecology in New York City, but I quickly found myself drawn to plant-environment interactions...</p>
 
                     <p>Jeff currently resides in Missoula, MT with his wife (who is a wildfire modeler), and his two dogs. When not working he can be found bikepacking, cross-country skiing, looking for fungi in the forest, and making homemade pasta.</p>
                 </div>
@@ -200,6 +223,39 @@
                     <p class="caption">Duke porch sittin'</p>
                 </div>
             </div>
+        </div>
+
+        <!-- My Research Section -->
+        <div id="research" class="section">
+            <h2>My Research</h2>
+
+            <div class="research-section">
+                <h3>Advanced Modeling and Artificial Intelligence in Agriculture</h3>
+                <p>[To be filled in later]</p>
+            </div>
+
+            <div class="research-section">
+                <h3>Photosynthesis and Stomata</h3>
+                <p>[To be filled in later]</p>
+            </div>
+
+            <div class="research-section">
+                <h3>Australian Grasslands and Rangelands</h3>
+                <p>[To be filled in later]</p>
+            </div>
+
+            <div class="research-section">
+                <h3>Southern Pine, Root Fungi, and Bark Beetles</h3>
+                <p>[To be filled in later]</p>
+            </div>
+        </div>
+
+        <!-- Links Section -->
+        <div id="links" class="section links-container">
+            <h2>Links</h2>
+            <a href="https://scholar.google.com" target="_blank">Google Scholar</a>
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            <a href="https://github.com" target="_blank">GitHub</a>
         </div>
     </div>
 
