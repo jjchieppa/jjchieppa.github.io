@@ -99,6 +99,11 @@
             border-radius: 10px;
         }
 
+        /* Adjust Yellowstone cycling photo (40% larger) */
+        .cycling-img {
+            width: 250px;
+        }
+
         /* Bottom Images */
         .bio-bottom-imgs {
             display: flex;
@@ -111,6 +116,13 @@
             width: 200px;
             height: auto;
             border-radius: 10px;
+        }
+
+        /* Captions */
+        .caption {
+            font-size: 14px;
+            color: #555;
+            margin-top: 5px;
         }
 
     </style>
@@ -144,8 +156,11 @@
             <h2>Biography</h2>
             
             <div class="bio-container">
-                <img src="photo_bio_4snowy selfie.jpg" alt="Jeff in snowy environment">
-                
+                <div>
+                    <img src="photo_bio_4snowy selfie.jpg" alt="Jeff hiking in Montana">
+                    <p class="caption">Jeff hiking in Montana</p>
+                </div>
+
                 <div class="bio-text">
                     <p>I am a research scientist with a deep passion for plant ecology, climate science, and the integration of data science with biological systems. Over the course of my career, I have worked across multiple scales of biological organization, from photosynthetic biochemistry and organ-level function to plant-insect interactions, community dynamics, and continental-scale forecasting.</p>
 
@@ -156,14 +171,28 @@
                     <p>Now, I am eager to return to ecology and environmental research, bringing my multiscale perspective and computational expertise to address pressing challenges in plant ecology, climate adaptation, and conservation.</p>
                 </div>
 
-                <img src="photo_bio_2cycling yellowstone.jpg" alt="Jeff cycling in Yellowstone">
+                <div>
+                    <img src="photo_bio_2cycling yellowstone.jpg" alt="Jeff cycling in Yellowstone" class="cycling-img">
+                    <p class="caption">Jeff cycling in Yellowstone</p>
+                </div>
             </div>
 
             <!-- Bottom Images -->
             <div class="bio-bottom-imgs">
-                <img src="photo_bio_3violet snow.jpg" alt="Violet Snow">
-                <img src="photo_bio_3mushroom foray.jpg" alt="Mushroom Foray">
-                <img src="photo_bio_3duke.jpg" alt="Duke Forest">
+                <div>
+                    <img src="photo_bio_3violet snow.jpg" alt="Violet in the snow">
+                    <p class="caption">Violet in the snow</p>
+                </div>
+
+                <div>
+                    <img src="photo_bio_3mushroom foray.jpg" alt="Forays for diversity are fun">
+                    <p class="caption">Forays for diversity are fun (edibles are the bonus)</p>
+                </div>
+
+                <div>
+                    <img src="photo_bio_3duke.jpg" alt="Duke porch sittin'">
+                    <p class="caption">Duke porch sittin'</p>
+                </div>
             </div>
         </div>
 
