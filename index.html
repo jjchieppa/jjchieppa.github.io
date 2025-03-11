@@ -45,12 +45,10 @@
 
         /* Main Content */
         .content {
-            flex-grow: 1;
-            padding: 20px;
-            text-align: center;
-            max-width: 1200px;
-            margin: auto;
-            margin-left: 220px;
+            width: 95%;  /* Make use of more screen space */
+            max-width: 1600px; /* Increase max width */
+            margin: auto; /* Keep it centered */
+            padding: 20px; /* Add spacing around */
         }
 
         /* Fix header image size across all pages */
@@ -84,12 +82,13 @@
         .bio-container {
             display: flex;
             align-items: center;
-            justify-content: center;
-            gap: 20px;
+            justify-content: space-between;
+            gap: 60px;
         }
-
+        
         .bio-text {
-            max-width: 450px;
+            width: 60%; /* Let text take more space */
+            max-width: 800px; /* Prevent it from getting too wide */
             text-align: left;
         }
 
