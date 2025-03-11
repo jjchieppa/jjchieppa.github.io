@@ -66,6 +66,33 @@
         #biography {
             display: block;
         }
+
+        /* Biography Layout */
+        .bio-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .bio-text {
+            max-width: 500px;
+            text-align: left;
+        }
+
+        .bio-container img {
+            width: 150px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .bio-bottom-img {
+            margin-top: 20px;
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+        }
+
     </style>
     <script>
         function showSection(sectionId) {
@@ -92,13 +119,27 @@
         <!-- Biography Section -->
         <div id="biography" class="section">
             <h2>Biography</h2>
-            <p>I am a research scientist with a deep passion for plant ecology, climate science, and the integration of data science with biological systems. Over the course of my career, I have worked across multiple scales of biological organization, from photosynthetic biochemistry and organ-level function to plant-insect interactions, community dynamics, and continental-scale forecasting.</p>
+            
+            <div class="bio-container">
+                <img src="photo_snowy selfie.jpg" alt="Jeff in snowy environment">
+                
+                <div class="bio-text">
+                    <p>I am a research scientist with a deep passion for plant ecology, climate science, and the integration of data science with biological systems. Over the course of my career, I have worked across multiple scales of biological organization, from photosynthetic biochemistry and organ-level function to plant-insect interactions, community dynamics, and continental-scale forecasting.</p>
 
-            <p>My research journey began in 2011 as an intern studying wildlife movement ecology in New York City, but I quickly found myself drawn to plant-environment interactions. Since then, I have conducted field and laboratory studies in southern pine forests, the Australian Outback, Florida mangroves, Midwestern prairies, and countless greenhouses and growth chambers, always seeking to understand how plants function under changing environmental conditions.</p>
+                    <p>My research journey began in 2011 as an intern studying wildlife movement ecology in New York City, but I quickly found myself drawn to plant-environment interactions. Since then, I have conducted field and laboratory studies in southern pine forests, the Australian Outback, Florida mangroves, Midwestern prairies, and countless greenhouses and growth chambers, always seeking to understand how plants function under changing environmental conditions.</p>
 
-            <p>Following my PhD and three postdoctoral roles, I transitioned away from university research and joined the Advanced Modeling and Artificial Intelligence team for Corteva Agriscience. There I expanded my expertise beyond plant science to include predictive analytics and ML for agricultural pests/pathogens. Along the way, I deepened my skills in R and developed new skills in Python, enabling me to provide biological expertise to big-data problems in a variety of contexts.</p>
+                    <p>Following my PhD and three postdoctoral roles, I transitioned away from university research and joined the Advanced Modeling and Artificial Intelligence team for Corteva Agriscience. There I expanded my expertise beyond plant science to include predictive analytics and ML for agricultural pests/pathogens. Along the way, I deepened my skills in R and developed new skills in Python, enabling me to provide biological expertise to big-data problems in a variety of contexts.</p>
 
-            <p>Now, I am eager to return to ecology and environmental research, bringing my multiscale perspective and computational expertise to address pressing challenges in plant ecology, climate adaptation, and conservation.</p>
+                    <p>Now, I am eager to return to ecology and environmental research, bringing my multiscale perspective and computational expertise to address pressing challenges in plant ecology, climate adaptation, and conservation.</p>
+                </div>
+
+                <img src="photo_cycling yellowstone.jpg" alt="Jeff cycling in Yellowstone">
+            </div>
+
+            <!-- Bottom Image -->
+            <div>
+                <img src="photo_mushroom foray.jpg" alt="Jeff at a mushroom foray" class="bio-bottom-img">
+            </div>
         </div>
 
         <!-- My Research Section -->
