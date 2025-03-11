@@ -12,6 +12,8 @@
             display: flex;
             margin: 0;
             height: 100vh;
+            flex-direction: column;
+            align-items: center;
         }
 
         /* Sidebar Styles */
@@ -23,6 +25,10 @@
             flex-direction: column;
             padding-top: 20px;
             text-align: center;
+            position: fixed;
+            height: 100vh;
+            left: 0;
+            top: 0;
         }
 
         .sidebar a {
@@ -42,19 +48,26 @@
             flex-grow: 1;
             padding: 20px;
             text-align: center;
-            max-width: 700px;
+            max-width: 800px;
             margin: auto;
+            margin-left: 220px;
+        }
+
+        /* Header Image */
+        .header-img {
+            width: 100%;
+            max-height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
         }
 
         /* Banner */
         .banner {
             font-size: 24px;
             font-weight: bold;
-            background-color: #0073b1;
-            color: white;
+            color: #333;
             padding: 15px;
             text-align: center;
-            margin-bottom: 20px;
         }
 
         /* Hide content sections by default */
@@ -81,14 +94,21 @@
         }
 
         .bio-container img {
-            width: 150px;
+            width: 180px;
             height: auto;
             border-radius: 10px;
         }
 
-        .bio-bottom-img {
+        /* Bottom Images */
+        .bio-bottom-imgs {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
             margin-top: 20px;
-            width: 300px;
+        }
+
+        .bio-bottom-imgs img {
+            width: 200px;
             height: auto;
             border-radius: 10px;
         }
@@ -114,6 +134,9 @@
 
     <!-- Main Content -->
     <div class="content">
+        <!-- Header Image -->
+        <img src="photo_header_0panorama header.jpg" alt="Header Panorama" class="header-img">
+
         <div class="banner">Jeff Chieppa, PhD</div>
 
         <!-- Biography Section -->
@@ -121,7 +144,7 @@
             <h2>Biography</h2>
             
             <div class="bio-container">
-                <img src="photo_snowy selfie.jpg" alt="Jeff in snowy environment">
+                <img src="photo_bio_4snowy selfie.jpg" alt="Jeff in snowy environment">
                 
                 <div class="bio-text">
                     <p>I am a research scientist with a deep passion for plant ecology, climate science, and the integration of data science with biological systems. Over the course of my career, I have worked across multiple scales of biological organization, from photosynthetic biochemistry and organ-level function to plant-insect interactions, community dynamics, and continental-scale forecasting.</p>
@@ -133,12 +156,14 @@
                     <p>Now, I am eager to return to ecology and environmental research, bringing my multiscale perspective and computational expertise to address pressing challenges in plant ecology, climate adaptation, and conservation.</p>
                 </div>
 
-                <img src="photo_cycling yellowstone.jpg" alt="Jeff cycling in Yellowstone">
+                <img src="photo_bio_2cycling yellowstone.jpg" alt="Jeff cycling in Yellowstone">
             </div>
 
-            <!-- Bottom Image -->
-            <div>
-                <img src="photo_mushroom foray.jpg" alt="Jeff at a mushroom foray" class="bio-bottom-img">
+            <!-- Bottom Images -->
+            <div class="bio-bottom-imgs">
+                <img src="photo_bio_3violet snow.jpg" alt="Violet Snow">
+                <img src="photo_bio_3mushroom foray.jpg" alt="Mushroom Foray">
+                <img src="photo_bio_3duke.jpg" alt="Duke Forest">
             </div>
         </div>
 
