@@ -16,12 +16,12 @@
 
         /* Sidebar Styles */
         .sidebar {
-            width: 220px;
+            width: 200px; /* Slightly smaller sidebar */
             background-color: #333;
             color: white;
             display: flex;
             flex-direction: column;
-            padding-top: 20px;
+            padding-top: 15px;
             text-align: center;
             position: fixed;
             height: 100vh;
@@ -31,10 +31,10 @@
 
         .sidebar a {
             color: white;
-            padding: 15px;
+            padding: 12px;
             text-decoration: none;
             display: block;
-            font-size: 20px;
+            font-size: 18px; /* Slightly smaller sidebar text */
         }
 
         .sidebar a:hover {
@@ -43,28 +43,28 @@
 
         /* Main Content */
         .content {
-            width: 85%;
-            max-width: 1500px;
+            width: 90%;  
+            max-width: 1300px; /* Slightly smaller max width */
             margin: auto;
-            padding: 30px;
-            margin-left: 250px;
+            padding: 20px;
+            margin-left: 220px; /* Adjust for smaller sidebar */
             text-align: center;
         }
 
         /* Fix header image size across all pages */
         .header-img {
             width: 100%;
-            height: 350px;
+            height: 280px; /* Smaller header image */
             object-fit: cover;
-            border-radius: 10px;
+            border-radius: 8px;
         }
 
         /* Banner */
         .banner {
-            font-size: 36px;
+            font-size: 28px; /* Smaller banner */
             font-weight: bold;
             color: #333;
-            padding: 20px;
+            padding: 15px;
             text-align: center;
         }
 
@@ -83,27 +83,27 @@
             display: flex;
             align-items: flex-start;
             justify-content: center;
-            gap: 80px;
+            gap: 60px; /* Keep spacing */
         }
         
         .bio-text {
-            width: 50%;
-            max-width: 800px;
+            width: 60%; /* Make the text box wider */
+            max-width: 900px;
             text-align: left;
-            font-size: 18px; /* Text size set to 18px */
-            line-height: 1.6;
+            font-size: 16px; /* Smaller text for compact view */
+            line-height: 1.5;
         }
 
-        /* Default size for all images */
+        /* Smaller images */
         .bio-container img {
-            width: 250px;
+            width: 200px; /* Reduce image size */
             height: auto;
-            border-radius: 10px;
+            border-radius: 8px;
         }
 
-        /* Increase Yellowstone cycling photo */
+        /* Smaller Yellowstone cycling photo */
         .cycling-img {
-            width: 550px !important;
+            width: 450px !important; /* Reduce further */
             height: auto;
         }
 
@@ -111,37 +111,22 @@
         .bio-bottom-imgs {
             display: flex;
             justify-content: center;
-            gap: 30px;
-            margin-top: 40px;
+            gap: 20px;
+            margin-top: 30px;
         }
 
         .bio-bottom-imgs img {
-            width: 260px;
+            width: 220px; /* Smaller bottom images */
             height: auto;
-            border-radius: 10px;
+            border-radius: 8px;
         }
 
         /* Captions */
         .caption {
-            font-size: 16px;
+            font-size: 14px; /* Smaller captions */
             color: #555;
-            margin-top: 8px;
+            margin-top: 6px;
             font-style: italic;
-        }
-
-        /* Research Sections */
-        .research-section {
-            text-align: left;
-            max-width: 900px;
-            margin: 30px auto;
-        }
-
-        .research-section h3 {
-            font-size: 24px;
-            color: #333;
-            border-bottom: 2px solid #0073b1;
-            padding-bottom: 5px;
-            margin-bottom: 10px;
         }
 
     </style>
