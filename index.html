@@ -16,7 +16,7 @@
 
         /* Sidebar Styles */
         .sidebar {
-            width: 180px; /* Smaller sidebar */
+            width: 180px;
             background-color: #333;
             color: white;
             display: flex;
@@ -34,7 +34,7 @@
             padding: 10px;
             text-decoration: none;
             display: block;
-            font-size: 16px; /* Smaller sidebar text */
+            font-size: 16px;
         }
 
         .sidebar a:hover {
@@ -44,24 +44,24 @@
         /* Main Content */
         .content {
             width: 85%;
-            max-width: 1100px; /* Smaller max width */
+            max-width: 1100px;
             margin: auto;
             padding: 15px;
-            margin-left: 200px; /* Adjust for smaller sidebar */
+            margin-left: 200px;
             text-align: center;
         }
 
         /* Header Image */
         .header-img {
             width: 100%;
-            height: 220px; /* Smaller header image */
+            height: 220px;
             object-fit: cover;
             border-radius: 6px;
         }
 
         /* Banner */
         .banner {
-            font-size: 24px; /* Smaller banner */
+            font-size: 24px;
             font-weight: bold;
             color: #333;
             padding: 12px;
@@ -73,9 +73,57 @@
             display: none;
         }
 
-        /* Show the first section by default */
         #biography {
             display: block;
+        }
+
+        /* Biography Layout */
+        .bio-container {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 50px;
+        }
+        
+        .bio-text {
+            width: 65%;
+            max-width: 700px;
+            text-align: left;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        /* Images */
+        .bio-container img {
+            width: 160px;
+            height: auto;
+            border-radius: 6px;
+        }
+
+        .cycling-img {
+            width: 380px !important;
+            height: auto;
+        }
+
+        .bio-bottom-imgs {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .bio-bottom-imgs img {
+            width: 180px;
+            height: auto;
+            border-radius: 6px;
+        }
+
+        /* Captions */
+        .caption {
+            font-size: 12px;
+            color: #555;
+            margin-top: 4px;
+            font-style: italic;
         }
 
         /* Research Sections */
@@ -91,6 +139,18 @@
             border-bottom: 1px solid #0073b1;
             padding-bottom: 4px;
             margin-bottom: 8px;
+        }
+
+        /* Links Section */
+        .links-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .links-container a {
+            font-size: 14px;
+            display: block;
+            margin: 5px;
         }
 
     </style>
@@ -114,23 +174,44 @@
 
     <!-- Main Content -->
     <div class="content">
-        <!-- Header Image -->
         <img src="photos/photo_header_0panorama header.jpg" alt="Header Panorama" class="header-img">
-
         <div class="banner">Jeff Chieppa, PhD</div>
 
         <!-- Biography Section -->
         <div id="biography" class="section">
             <h2>Biography</h2>
+            
             <div class="bio-container">
                 <div>
                     <img src="photos/photo_bio_4snowy selfie.jpg" alt="Jeff hiking in Montana">
+                    <p class="caption">Jeff hiking in Montana</p>
                 </div>
+
                 <div class="bio-text">
                     <p>I am a research scientist with a deep passion for plant ecology, climate science, and the integration of data science with biological systems...</p>
+                    <p>Jeff currently resides in Missoula, MT with his wife (who is a wildfire modeler), and his two dogs. When not working he can be found bikepacking, cross-country skiing, looking for fungi in the forest, and making homemade pasta.</p>
                 </div>
+
                 <div>
-                    <img src="photos/photo_bio_2cycling yellowstone.jpg" alt="Jeff cycling in Yellowstone">
+                    <img src="photos/photo_bio_2cycling yellowstone.jpg" alt="Jeff cycling in Yellowstone" class="cycling-img">
+                    <p class="caption">Jeff cycling in Yellowstone</p>
+                </div>
+            </div>
+
+            <div class="bio-bottom-imgs">
+                <div>
+                    <img src="photos/photo_bio_3violet snow.jpg" alt="Violet in the snow">
+                    <p class="caption">Violet in the snow, wishing she had her own skis</p>
+                </div>
+
+                <div>
+                    <img src="photos/photo_bio_3mushroom foray.jpg" alt="Forays for diversity are fun">
+                    <p class="caption">Forays for diversity are fun (edibles are the bonus!)</p>
+                </div>
+
+                <div>
+                    <img src="photos/photo_bio_3duke.jpg" alt="Duke porch sittin'">
+                    <p class="caption">Duke porch sittin'</p>
                 </div>
             </div>
         </div>
@@ -138,29 +219,23 @@
         <!-- Research Section -->
         <div id="research" class="section">
             <h2>My Research</h2>
-            
+
             <div class="research-section">
-                <h3>Climate Change and Crop Performance</h3>
-                <p>Investigating how environmental stressors impact crop resilience and productivity.</p>
+                <h3>Southern Pine Decline and Ecosystem Vulnerability</h3>
+                <p>My work on southern pine decline investigated the physiological responses of trees to root-infecting fungi and environmental stressors, such as drought and soil nutrient depletion. Through a combination of field experiments and laboratory studies, I examined the interactive effects of biotic and abiotic stressors on root function, water transport, and overall tree health. My research aimed to identify early indicators of decline and improve forecasting models for ecosystem vulnerability under climate change.</p>
             </div>
-            
-            <div class="research-section">
-                <h3>Insect Pest Modeling</h3>
-                <p>Developing spatial models to predict the spread and survival of agricultural pests.</p>
-            </div>
-            
-            <div class="research-section">
-                <h3>Fungal Pathogens in Agricultural Systems</h3>
-                <p>Exploring the role of fungal infections in plant disease dynamics and crop loss.</p>
-            </div>
-            
-            <div class="research-section">
-                <h3>Southern Pine Decline and Environmental Stressors</h3>
-                <p>Southern pine decline is a complex syndrome affecting loblolly pine (*Pinus taeda*) and other southeastern U.S. pine species, often linked to environmental stressors and root-infecting ophiostomatoid fungi. My research explores how two key factors—elevated tropospheric ozone and variable summer precipitation—interact with fungal susceptibility in loblolly pine seedlings. Using controlled greenhouse experiments, I assessed physiological responses, fungal colonization, and host susceptibility under simulated ozone exposure and shifting rainfall patterns.</p>
-                <p>Findings suggest that environmental stressors can exacerbate mechanical damage in seedlings, potentially influencing disease progression, though direct fungal colonization patterns remain variable. Genetic variation within loblolly pine families plays a critical role in determining resilience, with some families exhibiting greater susceptibility to both fungal infection and environmental extremes. This work provides insight into the physiological trade-offs between abiotic stress tolerance and biotic resistance, contributing to a broader understanding of southern pine decline.</p>
-                <p>By integrating plant physiology, pathology, and climate stressors, my research highlights the need for a holistic approach to forest management. As climate change alters atmospheric conditions and precipitation patterns, understanding these interactions will be key to predicting and mitigating the future impacts of disease on pine forests in the southeastern U.S.</p>
-            </div>
+
+        </div>
+
+        <!-- Links Section -->
+        <div id="links" class="section links-container">
+            <h2>Links</h2>
+            <a href="https://scholar.google.com" target="_blank">Google Scholar</a>
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            <a href="https://github.com" target="_blank">GitHub</a>
+            <a href="Chieppa%20website%20CV_2025-03-11.pdf" target="_blank">Download CV</a>
         </div>
     </div>
+
 </body>
 </html>
