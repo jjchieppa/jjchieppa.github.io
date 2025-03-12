@@ -59,6 +59,15 @@
             border-radius: 6px;
         }
 
+        /* Banner */
+        .banner {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            padding: 12px;
+            text-align: center;
+        }
+
         /* Hide content sections by default */
         .section {
             display: none;
@@ -68,7 +77,56 @@
             display: block;
         }
 
-        /* Research Section */
+        /* Biography Layout */
+        .bio-container {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 50px;
+        }
+        
+        .bio-text {
+            width: 65%;
+            max-width: 700px;
+            text-align: left;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        /* Images */
+        .bio-container img {
+            width: 160px;
+            height: auto;
+            border-radius: 6px;
+        }
+
+        .cycling-img {
+            width: 380px !important;
+            height: auto;
+        }
+
+        .bio-bottom-imgs {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .bio-bottom-imgs img {
+            width: 180px;
+            height: auto;
+            border-radius: 6px;
+        }
+
+        /* Captions */
+        .caption {
+            font-size: 12px;
+            color: #555;
+            margin-top: 4px;
+            font-style: italic;
+        }
+
+        /* Research Sections */
         .research-section {
             text-align: left;
             max-width: 750px;
@@ -81,33 +139,6 @@
             border-bottom: 1px solid #0073b1;
             padding-bottom: 4px;
             margin-bottom: 8px;
-        }
-
-        /* Image Styling */
-        .research-images {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin-bottom: 20px;
-        }
-
-        .research-images img {
-            height: 250px;
-            width: auto;
-            border-radius: 6px;
-        }
-
-        .panorama {
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-        }
-
-        .panorama img {
-            width: 100%;
-            max-width: 900px;
-            height: auto;
-            border-radius: 6px;
         }
 
         /* Links Section */
@@ -146,39 +177,45 @@
         <img src="photos/photo_header_0panorama header.jpg" alt="Header Panorama" class="header-img">
         <div class="banner">Jeff Chieppa, PhD</div>
 
+        <!-- Biography Section -->
+        <div id="biography" class="section">
+            <h2>Biography</h2>
+            <div class="bio-container">
+                <div>
+                    <img src="photos/photo_bio_4snowy selfie.jpg" alt="Jeff hiking in Montana">
+                    <p class="caption">Jeff hiking in Montana</p>
+                </div>
+                <div class="bio-text">
+                    <p>Your full biography text here.</p>
+                </div>
+                <div>
+                    <img src="photos/photo_bio_2cycling yellowstone.jpg" alt="Jeff cycling in Yellowstone" class="cycling-img">
+                    <p class="caption">Jeff cycling in Yellowstone</p>
+                </div>
+            </div>
+        </div>
+
         <!-- Research Section -->
         <div id="research" class="section">
-            
-            <h3>Rainfall Variability, Functional Traits, and Productivity in Australian Grasslands</h3>
-            <div class="research-images">
-                <img src="photos/photo_research_2milparinka wet.jpg" alt="Milparinka Wet Site">
-                <img src="photos/photo_research_2phalaris roots.jpg" alt="Phalaris Roots Experiment">
-                <img src="photos/photo_research_2milparinka dry.jpg" alt="Milparinka Dry Site">
-            </div>
-
-            <div class="panorama">
-                <img src="photos/photo_research_2outback droughtnet.jpg" alt="Outback Drought Experiment">
-            </div>
-
-            <div class="research-images">
-                <img src="photos/photo_research_2scrubland.jpg" alt="Scrubland Vegetation">
-                <img src="photos/photo_research_2sturts.jpg" alt="Sturt's Desert">
-                <img src="photos/photo_research_2joey.jpg" alt="Joey in the Field">
-            </div>
-
-            <hr style="border: none; height: 3px; background-color: black; margin-top: 40px;">
+            <h2>My Research</h2>
 
             <h3>Southern Pine Decline and Ecosystem Vulnerability</h3>
-            <div class="research-images">
-                <img src="photos/photo_research_1MSc_SPD diagram.jpg" alt="Southern Pine Decline Diagram">
-                <img src="photos/photo_research_1MSc_pine genotypes.jpg" alt="Pine Genotypes">
+            <div class="research-section">
+                <img src="photos/photo_research_1MSc_SPD diagram.jpg" alt="Southern Pine Decline Diagram" style="width: 350px; height: auto; border-radius: 6px;">
+                <p>Your full research text here.</p>
+                <img src="photos/photo_research_1MSc_pine genotypes.jpg" alt="Pine Genotypes" style="width: 250px; height: auto; border-radius: 6px;">
             </div>
 
-            <div class="research-images">
-                <img src="photos/photo_research_1MSC_otc site.jpg" alt="OTC Site">
-                <img src="photos/photo_research_1MSc_inside otc.jpg" alt="Inside OTC">
-                <img src="photos/photo_research_1MSc_experiment measurements.jpg" alt="Experiment Measurements">
+            <h3>Rainfall Variability, Functional Traits, and Productivity in Australian Grasslands</h3>
+            <div class="research-section">
+                <img src="photos/photo_research_2milparinka wet.jpg" alt="Milparinka Wet Site" style="height: 250px; width: auto; border-radius: 6px;">
+                <img src="photos/photo_research_2phalaris roots.jpg" alt="Phalaris Roots Experiment" style="height: 250px; width: auto; border-radius: 6px;">
+                <img src="photos/photo_research_2milparinka dry.jpg" alt="Milparinka Dry Site" style="height: 250px; width: auto; border-radius: 6px;">
+                <p>Your full research text here.</p>
             </div>
+
+            <!-- Section Divider -->
+            <hr style="border: none; height: 3px; background-color: black; margin-top: 40px;">
         </div>
 
         <!-- Links Section -->
@@ -190,6 +227,5 @@
             <a href="Chieppa%20website%20CV_2025-03-11.pdf" target="_blank">Download CV</a>
         </div>
     </div>
-
 </body>
 </html>
