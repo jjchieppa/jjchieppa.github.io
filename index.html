@@ -1,4 +1,4 @@
-dro<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -59,15 +59,6 @@ dro<!DOCTYPE html>
             border-radius: 6px;
         }
 
-        /* Banner */
-        .banner {
-            font-size: 24px;
-            font-weight: bold;
-            color: #333;
-            padding: 12px;
-            text-align: center;
-        }
-
         /* Hide content sections by default */
         .section {
             display: none;
@@ -77,56 +68,7 @@ dro<!DOCTYPE html>
             display: block;
         }
 
-        /* Biography Layout */
-        .bio-container {
-            display: flex;
-            align-items: flex-start;
-            justify-content: center;
-            gap: 50px;
-        }
-        
-        .bio-text {
-            width: 65%;
-            max-width: 700px;
-            text-align: left;
-            font-size: 14px;
-            line-height: 1.4;
-        }
-
-        /* Images */
-        .bio-container img {
-            width: 160px;
-            height: auto;
-            border-radius: 6px;
-        }
-
-        .cycling-img {
-            width: 380px !important;
-            height: auto;
-        }
-
-        .bio-bottom-imgs {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin-top: 20px;
-        }
-
-        .bio-bottom-imgs img {
-            width: 180px;
-            height: auto;
-            border-radius: 6px;
-        }
-
-        /* Captions */
-        .caption {
-            font-size: 12px;
-            color: #555;
-            margin-top: 4px;
-            font-style: italic;
-        }
-
-        /* Research Sections */
+        /* Research Section */
         .research-section {
             text-align: left;
             max-width: 750px;
@@ -139,6 +81,33 @@ dro<!DOCTYPE html>
             border-bottom: 1px solid #0073b1;
             padding-bottom: 4px;
             margin-bottom: 8px;
+        }
+
+        /* Image Styling */
+        .research-images {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+        }
+
+        .research-images img {
+            height: 250px;
+            width: auto;
+            border-radius: 6px;
+        }
+
+        .panorama {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .panorama img {
+            width: 100%;
+            max-width: 900px;
+            height: auto;
+            border-radius: 6px;
         }
 
         /* Links Section */
@@ -177,250 +146,40 @@ dro<!DOCTYPE html>
         <img src="photos/photo_header_0panorama header.jpg" alt="Header Panorama" class="header-img">
         <div class="banner">Jeff Chieppa, PhD</div>
 
-
-
-
-
-
-
-
-
-
-
-
-        
-
-
-        
-        <!-- Biography Section -->
-        <div id="biography" class="section">
-            <h2>Biography</h2>
+        <!-- Research Section -->
+        <div id="research" class="section">
             
-            <div class="bio-container">
-                <div>
-                    <img src="photos/photo_bio_4snowy selfie.jpg" alt="Jeff hiking in Montana">
-                    <p class="caption">Jeff hiking in Montana</p>
-                </div>
-
-                <div class="bio-text">
-                    <p>I am a research scientist with a deep passion for plant ecology, climate science, and the integration of data science with biological systems. 
-                        Over the course of my career, I have worked across multiple scales of biological organization, from photosynthetic biochemistry and organ-level function to plant-insect interactions, 
-                        community dynamics, and continental-scale forecasting.</p>
-
-                    <p>My research journey began in 2011 as an intern studying wildlife movement ecology in New York City, 
-                        but I quickly found myself drawn to plant-environment interactions. 
-                        Since then, I have conducted field and laboratory studies in southern pine forests, 
-                        the Australian Outback, Florida mangroves, Midwestern prairies, and countless greenhouses and growth chambers, 
-                        always seeking to understand how plants function under changing environmental conditions.</p>
-
-                    <p>I currently resides in Missoula, MT with my wife (who is a wildfire modeler), and our two dogs. 
-                        When not working I can be found bikepacking, cross-country skiing, looking for fungi in the forest, and making homemade pasta.</p>
-                </div>
-
-                <div>
-                    <img src="photos/photo_bio_2cycling yellowstone.jpg" alt="Jeff cycling in Yellowstone" class="cycling-img">
-                    <p class="caption">Jeff cycling in Yellowstone</p>
-                </div>
+            <h3>Rainfall Variability, Functional Traits, and Productivity in Australian Grasslands</h3>
+            <div class="research-images">
+                <img src="photos/photo_research_2milparinka wet.jpg" alt="Milparinka Wet Site">
+                <img src="photos/photo_research_2phalaris roots.jpg" alt="Phalaris Roots Experiment">
+                <img src="photos/photo_research_2milparinka dry.jpg" alt="Milparinka Dry Site">
             </div>
 
-            <div class="bio-bottom-imgs">
-                <div>
-                    <img src="photos/photo_bio_3violet snow.jpg" alt="Violet in the snow">
-                    <p class="caption">Violet in the snow, wishing she had her own skis</p>
-                </div>
+            <div class="panorama">
+                <img src="photos/photo_research_2outback droughtnet.jpg" alt="Outback Drought Experiment">
+            </div>
 
-                <div>
-                    <img src="photos/photo_bio_3mushroom foray.jpg" alt="Forays for diversity are fun">
-                    <p class="caption">Forays for diversity are fun (edibles are the bonus!)</p>
-                </div>
+            <div class="research-images">
+                <img src="photos/photo_research_2scrubland.jpg" alt="Scrubland Vegetation">
+                <img src="photos/photo_research_2sturts.jpg" alt="Sturt's Desert">
+                <img src="photos/photo_research_2joey.jpg" alt="Joey in the Field">
+            </div>
 
-                <div>
-                    <img src="photos/photo_bio_3duke.jpg" alt="Duke porch sittin'">
-                    <p class="caption">Duke porch sittin'</p>
-                </div>
+            <hr style="border: none; height: 3px; background-color: black; margin-top: 40px;">
+
+            <h3>Southern Pine Decline and Ecosystem Vulnerability</h3>
+            <div class="research-images">
+                <img src="photos/photo_research_1MSc_SPD diagram.jpg" alt="Southern Pine Decline Diagram">
+                <img src="photos/photo_research_1MSc_pine genotypes.jpg" alt="Pine Genotypes">
+            </div>
+
+            <div class="research-images">
+                <img src="photos/photo_research_1MSC_otc site.jpg" alt="OTC Site">
+                <img src="photos/photo_research_1MSc_inside otc.jpg" alt="Inside OTC">
+                <img src="photos/photo_research_1MSc_experiment measurements.jpg" alt="Experiment Measurements">
             </div>
         </div>
-
-
-
-
-
-
-
-
-
-
-
-        
-
-<!-- Section Divider (Solid Black Line) -->
-<hr style="border: none; height: 3px; background-color: black; margin-top: 40px;">
-
-        
-<!-- Rainfall Variability, Functional Traits, and Productivity in Australian Grasslands -->
-<h3>Rainfall Variability, Functional Traits, and Productivity in Australian Grasslands</h3>
-
-<!-- Research Images: Top Row (Uniform Height) -->
-<div style="display: flex; justify-content: center; gap: 30px; margin-bottom: 20px;">
-    <img src="photos/photo_research_2milparinka wet.jpg" alt="Milparinka Wet Site" 
-         style="height: 250px; width: auto; border-radius: 6px;">
-    <img src="photos/photo_research_2phalaris roots.jpg" alt="Phalaris Roots Experiment" 
-         style="height: 250px; width: auto; border-radius: 6px;">
-    <img src="photos/photo_research_2milparinka dry.jpg" alt="Milparinka Dry Site" 
-         style="height: 250px; width: auto; border-radius: 6px;">
-</div>
-
-<!-- Research Text: Stacked and Wider -->
-<div class="bio-text" style="width: 100%; max-width: 1100px; margin: auto; text-align: left; font-size: 14px; line-height: 1.5;">
-    <p>Grasslands are important ecosystems worldwide, and their diversity and productivity is strongly linked to rainfall patterns and soil nutrient availability. 
-        Changes in water and soil nutrients, associated with climate change and management regimes, are likely to have strong consequences for grasslands in the future. 
-        While the relationship between rainfall, nutrients, and grassland productivity has been well described, 
-        a mechanistic explanation as to why some grassland communities are more sensitive than others remains elusive.</p>
-
-    <p>Plant functional traits are useful to address this issue on a global scale, as they represent life history strategies and are universal across all plant taxa. 
-        Such traits often represent the inevitable trade-off between rapidly acquiring resources and the increasing rate of tissue turnover. 
-        Faster-growing species, referred to as acquisitive species, can be compared with conservative species, which are slower-growing and have low rates of tissue turnover along the resource-use axis. 
-        To address how grasslands may respond to future changes in rainfall and fertilization, 
-        I conducted a series of experiments using grasses and grassland ecosystems to study how traits may be used to understand variation in sensitivity across species and communities.</p>
-
-    <p>My research illustrates that the abundance of acquisitive and conservative plant species in a community can result in high levels of variation in productivity, 
-        a primary function of grasslands critical for pasture utilization and carbon sequestration. 
-        I found that root traits of grasses were responsive to phosphorus fertilization. 
-        As the primary organ for water uptake in plants, changes in root morphology associated with P availability may alter how grassland communities respond to changes in precipitation.</p>
-
-    <p>In addition, I found grouping species based on their functional types was helpful in quantifying plant biomass in remote arid and semi-arid regions, 
-        where logistics of scientific investigation can be difficult. 
-        More specifically, I developed a set of allometric equations that use non-destructive proxies (plant cover and height) to estimate plant biomass. 
-        These estimates were improved by grouping species based on functional type (i.e., rough morphological and life-history characteristics).</p> 
-             
-    <p>Finally, I investigated how interspecific plant interactions (namely competition) may change under different timing and severity of 
-        droughts to identify key candidate grasses for multispecies pasture utilization. 
-        Ultimately, this work contributes valuable information regarding the underlying mechanisms of varying sensitivity in productivity in grassland communities and individual grass species, 
-        which will be increasingly important to manage under future climatic scenarios.</p>
-</div>
-
-<!-- Panorama Image Below the Text -->
-<div style="display: flex; justify-content: center; margin-top: 20px;">
-    <img src="photos/photo_research_2outback droughtnet.jpg" alt="Outback Drought Experiment" 
-         style="width: 100%; max-width: 900px; height: auto; border-radius: 6px;">
-</div>
-
-<!-- Research Images: Bottom Row (Maintain Aspect Ratios but Same Height) -->
-<div style="display: flex; justify-content: center; gap: 20px; margin-top: 20px;">
-    <img src="photos/photo_research_2scrubland.jpg" alt="Scrubland Vegetation" 
-         style="height: 200px; width: auto; border-radius: 6px;">
-    <img src="photos/photo_research_2sturts.jpg" alt="Sturt's Desert" 
-         style="height: 200px; width: auto; border-radius: 6px;">
-    <img src="photos/photo_research_2joey.jpg" alt="Joey in the Field" 
-         style="height: 200px; width: auto; border-radius: 6px;">
-</div>
-
-<!-- Manuscript Downloads -->
-<div style="text-align: center; margin-top: 25px; margin-bottom: 25px;">
-    <a href="manuscripts/2018 griffin-nolan et al trait selection and community weighting are key to understanding ecosystem responses to changing precipitation regimes.pdf" 
-       target="_blank">Griffin-Nolan et al. 2018</a>
-    <br>
-    <a href="manuscripts/2019 chieppa et al drought and phosphorus affect productivity of a mesic grassland via shifts in root traits of dominant species.pdf" 
-       target="_blank">Chieppa et al. 2019</a>
-    <br>
-    <a href="manuscripts/2020 chieppa et al allometric estimates of aboveground biomass using cover and height are improved by increasing specificity of plant functional groups in eastern australian rangelands.pdf" 
-       target="_blank">Chieppa et al. 2020</a>
-    <br>
-    <a href="manuscripts/2020 deveautour et al biogeography of arbuscular mycorrhizal fungal spore traits along an aridity gradient and responses to experimental rainfall manipulation.pdf" 
-       target="_blank">Deveautour et al. 2020</a>
-    <br>
-    <a href="manuscripts/2022 chieppa et al plant functional traits affect competitive vigor of pasture grasses during drought and following recovery.pdf" 
-       target="_blank">Chieppa et al. 2022</a>
-        <br>
-    <a href="manuscripts/2023 griffin-nolan et al coordination on hydraulic and morphological traits across dominant grasses in eastern australia.pdf" 
-       target="_blank">Griffin-Nolan et al. 2023</a>
-        <br>
-    <a href="manuscripts/2023 maisnam et al severe prolonged drought favours stress tolerant microbes in australian drylands.pdf" 
-       target="_blank">Maisnam et al. 2023</a>
-        <br>
-    <a href="manuscripts/2024 smith et al extreme drought impacts have been underestimated in grasslands and shrublands globally.pdf" 
-       target="_blank">Smith et al. 2024</a>
-            <br>
-    <a href="manuscripts/2024 szejgis et al altered rainfall greatly affects enzyme activity but has limited effect on microbial biomass in australian dryland soils.pdf" 
-       target="_blank">Szejgis et al. 2024</a>
-</div>
-
-<!-- Section Divider (Solid Black Line) -->
-<hr style="border: none; height: 3px; background-color: black; margin-top: 40px;">
-
-
-
-
-        
-
-
-        
-        <h3>Southern Pine Decline and Ecosystem Vulnerability</h3>
-        
-        <!-- Research Images: Top Row -->
-<div style="width: 100%; display: flex; justify-content: center;">
-    <div style="display: flex; justify-content: center; gap: 30px; margin-bottom: 20px; max-width: 900px;">
-        <img src="photos/photo_research_1MSc_SPD diagram.jpg" alt="Southern Pine Decline Diagram" 
-             style="width: 350px; height: auto; border-radius: 6px;"> 
-        <img src="photos/photo_research_1MSc_pine genotypes.jpg" alt="Pine Genotypes" 
-             style="width: 250px; height: auto; border-radius: 6px;">
-    </div>
-</div>
-
-
-        <!-- Research Text: Ensure full width expansion -->
-        <div class="bio-text" style="width: 100%; max-width: 1100px; margin: auto; text-align: left; font-size: 14px; line-height: 1.5;">
-            <p>I did my MSc in the Forest Health Dynamics Laboratory at Auburn University's School of Forestry and Wildlife Sciences. 
-            There, I worked on Southern Pine Decline (SPD), a disease complex affecting the productivity of southern pine species, including loblolly pine. 
-            Stressed pine trees (due to edaphic, climatic, or genetic predispositions) release volatile compounds that attract root-feeding beetles, which in turn vector pathogenic fungi. 
-            Mature trees exhibiting SPD symptoms show crown dieback, reduced productivity, and a loss of fine root biomass.</p>
-
-            <p>For my thesis, I worked with loblolly pine seedlings, inoculating them with fungi associated with SPD. 
-            Genotypes with varying resistance and tolerance to SPD fungi were grown in open-top chambers (OTCs) at the Atmospheric Deposition Research Facility. 
-            We exposed them to elevated tropospheric ozone (first experiment) or fluctuating moisture supply (drought, second experiment) 
-            and assessed the interactive effects of climatic stressors and SPD fungi, exploring potential genetic relationships for cross-tolerance.</p>
-
-            <p>While working for the Forest Health Dynamics Laboratory, I also contributed to projects monitoring bark beetle populations 
-            (field capture, laboratory identification, responses to forest management), studying the effects of invasive grass on mycorrhizal colonization of pine, 
-            conducting forest health surveys (crown rating, allometry), and working in the wood products research space.</p>
-        </div>
-
-        <!-- Urban Heat Island Study -->
-        <div class="bio-text" style="width: 100%; max-width: 1100px; margin: auto; text-align: left; font-size: 14px; line-height: 1.5; margin-top: 20px;">
-            <p>While working on my MSc, I took on a side project to explore urban heat islands (UHIs) in small cities. 
-            Using a machine learning-based classification approach, we applied the Local Climate Zone (LCZ) system to satellite imagery, identifying urban and rural zones in Auburn and Opelika, Alabama. 
-            By deploying temperature sensors in multiple LCZs, we assessed how urban development influenced local temperatures. 
-            Results confirmed urban areas were consistently warmer, but UHI intensity varied even in similar zones, 
-            suggesting that LCZ-based classifications alone may not fully predict heat retention. 
-            This study demonstrated the potential of ML-driven remote sensing for urban climate analysis while highlighting its limitations in smaller, heterogeneous landscapes.</p>
-        </div>
-
-        <!-- Manuscript Downloads -->
-        <div style="text-align: center; margin-top: 25px; margin-bottom: 25px;">
-            <a href="manuscripts/2015 chieppa et al effects of tropospheric ozone on loblolly pine seedlings inoculated with root infecting ophistomatoid fungi.pdf" 
-               target="_blank">Chieppa et al. 2015</a>
-            <br>
-            <a href="manuscripts/2017 chieppa et al simulated summer rainfall variability effects on loblolly pine (pinus taeda) seedling physiology and susceptibility to root-infecting ophiostomatoid fungi.pdf" 
-               target="_blank">Chieppa et al. 2017</a>
-            <br>
-            <a href="manuscripts/2018 chieppa et al using local climate zones to detect uban heat island on two small cities in alabama.pdf" 
-               target="_blank">Chieppa et al. 2018</a>
-        </div>
-
-        <!-- Research Images: Bottom Row -->
-        <div style="display: flex; justify-content: center; gap: 20px; margin-top: 20px;">
-            <img src="photos/photo_research_1MSC_otc site.jpg" alt="OTC Site" style="width: 350px; border-radius: 6px;">
-            <img src="photos/photo_research_1MSc_inside otc.jpg" alt="Inside OTC" style="width: 350px; border-radius: 6px;">
-            <img src="photos/photo_research_1MSc_experiment measurements.jpg" alt="Experiment Measurements" style="width: 350px; border-radius: 6px;">
-        </div>
-
-    </div>
-</div>
-
-
-
-
-
 
         <!-- Links Section -->
         <div id="links" class="section links-container">
