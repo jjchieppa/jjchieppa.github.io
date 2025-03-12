@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jeff Chieppa</title>
     <style>
-        /* Global Styles */
         body {
             font-family: Arial, sans-serif;
             background-color: #f8f8f8;
@@ -14,7 +13,6 @@
             height: 100vh;
         }
 
-        /* Sidebar Styles */
         .sidebar {
             width: 180px;
             background-color: #333;
@@ -41,7 +39,6 @@
             background-color: #575757;
         }
 
-        /* Main Content */
         .content {
             width: 85%;
             max-width: 1100px;
@@ -51,7 +48,6 @@
             text-align: center;
         }
 
-        /* Header Image */
         .header-img {
             width: 100%;
             height: 220px;
@@ -59,7 +55,6 @@
             border-radius: 6px;
         }
 
-        /* Banner */
         .banner {
             font-size: 24px;
             font-weight: bold;
@@ -68,62 +63,12 @@
             text-align: center;
         }
 
-        /* Hide all sections by default except Biography */
         .section {
             display: none;
         }
 
         #biography {
             display: block;
-        }
-
-        /* Biography Layout */
-        .bio-container {
-            display: flex;
-            align-items: flex-start;
-            justify-content: center;
-            gap: 50px;
-        }
-        
-        .bio-text {
-            width: 65%;
-            max-width: 700px;
-            text-align: left;
-            font-size: 14px;
-            line-height: 1.4;
-        }
-
-        /* Images */
-        .bio-container img {
-            width: 160px;
-            height: auto;
-            border-radius: 6px;
-        }
-
-        .cycling-img {
-            width: 380px !important;
-            height: auto;
-        }
-
-        .bio-bottom-imgs {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin-top: 20px;
-        }
-
-        .bio-bottom-imgs img {
-            width: 180px;
-            height: auto;
-            border-radius: 6px;
-        }
-
-        /* Captions */
-        .caption {
-            font-size: 12px;
-            color: #555;
-            margin-top: 4px;
-            font-style: italic;
         }
     </style>
     <script>
@@ -136,59 +81,39 @@
     </script>
 </head>
 <body>
-
-    <!-- Sidebar Navigation -->
     <div class="sidebar">
         <a href="#" onclick="showSection('biography')">Biography</a>
         <a href="#" onclick="showSection('research')">My Research</a>
         <a href="#" onclick="showSection('links')">Links</a>
     </div>
 
-    <!-- Main Content -->
     <div class="content">
         <img src="photos/photo_header_0panorama header.jpg" alt="Header Panorama" class="header-img">
         <div class="banner">Jeff Chieppa, PhD</div>
 
-        <!-- Biography Section -->
         <div id="biography" class="section">
             <h2>Biography</h2>
-            
-            <div class="bio-container">
-                <div>
-                    <img src="photos/photo_bio_4snowy selfie.jpg" alt="Jeff hiking in Montana">
-                    <p class="caption">Jeff hiking in Montana</p>
-                </div>
-
-                <div class="bio-text">
-                    <p>I am a research scientist with a deep passion for plant ecology, climate science, and the integration of data science with biological systems...</p>
-                </div>
-
-                <div>
-                    <img src="photos/photo_bio_2cycling yellowstone.jpg" alt="Jeff cycling in Yellowstone" class="cycling-img">
-                    <p class="caption">Jeff cycling in Yellowstone</p>
-                </div>
-            </div>
+            <img src="photos/photo_bio_4snowy selfie.jpg" alt="Jeff hiking in Montana">
+            <p>Jeff hiking in Montana</p>
+            <img src="photos/photo_bio_3violet snow.jpg" alt="Violet in the snow">
+            <p>Violet in the snow, wishing she had her own skis</p>
+            <img src="photos/photo_bio_3duke.jpg" alt="Duke porch sittin'">
+            <p>Duke porch sittin'</p>
         </div>
 
-        <!-- Research Section -->
         <div id="research" class="section">
             <h2>My Research</h2>
+            <h3>Rainfall Variability, Functional Traits, and Productivity in Australian Grasslands</h3>
+            <p>Grasslands are important ecosystems worldwide, and their diversity and productivity is strongly linked to rainfall patterns and soil nutrient availability. Changes in water and soil nutrients, associated with climate change and management regimes, are likely to have strong consequences for grasslands in the future. While the relationship between rainfall, nutrients, and grassland productivity has been well described, a mechanistic explanation as to why some grassland communities are more sensitive than others remains elusive.</p>
+            <img src="photos/photo_research_2milparinka wet.jpg" alt="Milparinka Wet Site">
+            <img src="photos/photo_research_2phalaris roots.jpg" alt="Phalaris Roots Experiment">
             
-            <div class="research-section">
-                <h3>Rainfall Variability, Functional Traits, and Productivity in Australian Grasslands</h3>
-                <p>Grasslands are important ecosystems worldwide, and their diversity and productivity is strongly linked to rainfall patterns...</p>
-                <img src="photos/photo_research_2milparinka wet.jpg" alt="Milparinka Wet Site" style="width: 100%; max-width: 600px; border-radius: 6px;">
-            </div>
-
-            <div class="research-section">
-                <h3>Southern Pine Decline and Ecosystem Vulnerability</h3>
-                <p>I did my MSc in the Forest Health Dynamics Laboratory at Auburn University's School of Forestry and Wildlife Sciences...</p>
-                <img src="photos/photo_research_1MSc_SPD diagram.jpg" alt="Southern Pine Decline Diagram" style="width: 100%; max-width: 600px; border-radius: 6px;">
-            </div>
+            <h3>Southern Pine Decline and Ecosystem Vulnerability</h3>
+            <p>I did my MSc in the Forest Health Dynamics Laboratory at Auburn University's School of Forestry and Wildlife Sciences. There, I worked on Southern Pine Decline (SPD), a disease complex affecting the productivity of southern pine species, including loblolly pine. Stressed pine trees (due to edaphic, climatic, or genetic predispositions) release volatile compounds that attract root-feeding beetles, which in turn vector pathogenic fungi. Mature trees exhibiting SPD symptoms show crown dieback, reduced productivity, and a loss of fine root biomass.</p>
+            <img src="photos/photo_research_1MSc_SPD diagram.jpg" alt="Southern Pine Decline Diagram">
         </div>
 
-        <!-- Links Section -->
-        <div id="links" class="section links-container">
+        <div id="links" class="section">
             <h2>Links</h2>
             <a href="https://scholar.google.com" target="_blank">Google Scholar</a>
             <a href="https://linkedin.com" target="_blank">LinkedIn</a>
@@ -196,6 +121,5 @@
             <a href="Chieppa%20website%20CV_2025-03-11.pdf" target="_blank">Download CV</a>
         </div>
     </div>
-
 </body>
 </html>
