@@ -4,156 +4,240 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jeff Chieppa</title>
-    <style>
-        /* Global Styles */
+<style>
+    /* Global Styles */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f8f8;
+        display: flex;
+        margin: 0;
+        height: 100vh;
+    }
+
+    /* Sidebar Styles */
+    .sidebar {
+        width: 180px;
+        background-color: #333;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        padding-top: 12px;
+        text-align: center;
+        position: fixed;
+        height: 100vh;
+        left: 0;
+        top: 0;
+    }
+
+    .sidebar a {
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        display: block;
+        font-size: 16px;
+    }
+
+    .sidebar a:hover {
+        background-color: #575757;
+    }
+
+    /* Main Content */
+    .content {
+        width: 85%;
+        max-width: 1100px;
+        margin: auto;
+        padding: 15px;
+        margin-left: 200px;
+        text-align: center;
+    }
+
+    /* Header Image */
+    .header-img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        border-radius: 6px;
+    }
+
+    /* Banner */
+    .banner {
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+        padding: 12px;
+        text-align: center;
+    }
+
+    /* Hide content sections by default */
+    .section {
+        display: none;
+    }
+
+    #biography {
+        display: block;
+    }
+
+    /* Biography Layout */
+    .bio-container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 50px;
+    }
+    
+    .bio-text {
+        width: 65%;
+        max-width: 700px;
+        text-align: left;
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    /* Images */
+    .bio-container img {
+        width: 160px;
+        height: auto;
+        border-radius: 6px;
+    }
+
+    .cycling-img {
+        width: 380px !important;
+        height: auto;
+    }
+
+    .bio-bottom-imgs {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .bio-bottom-imgs img {
+        width: 180px;
+        height: auto;
+        border-radius: 6px;
+    }
+
+    /* Captions */
+    .caption {
+        font-size: 12px;
+        color: #555;
+        margin-top: 4px;
+        font-style: italic;
+    }
+
+    /* Research Sections */
+    .research-section {
+        text-align: left;
+        max-width: 750px;
+        margin: 25px auto;
+    }
+
+    .research-section h3 {
+        font-size: 18px;
+        color: #333;
+        border-bottom: 1px solid #0073b1;
+        padding-bottom: 4px;
+        margin-bottom: 8px;
+    }
+
+    /* Links Section */
+    .links-container {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .links-container a {
+        font-size: 14px;
+        display: block;
+        margin: 5px;
+    }
+
+
+
+    /* ========================================================== */
+    /*                 MOBILE RESPONSIVE DESIGN                   */
+    /* ========================================================== */
+    @media (max-width: 768px) {
+
+        /* Body becomes vertical */
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f8f8;
-            display: flex;
-            margin: 0;
-            height: 100vh;
+            flex-direction: column;
+            height: auto;
         }
 
-        /* Sidebar Styles */
+        /* Sidebar becomes a top navigation bar */
         .sidebar {
-            width: 180px;
-            background-color: #333;
-            color: white;
-            display: flex;
-            flex-direction: column;
-            padding-top: 12px;
-            text-align: center;
-            position: fixed;
-            height: 100vh;
-            left: 0;
-            top: 0;
+            position: relative;
+            width: 100%;
+            height: auto;
+            flex-direction: row;
+            justify-content: space-around;
+            padding: 10px 0;
         }
 
         .sidebar a {
-            color: white;
-            padding: 10px;
-            text-decoration: none;
-            display: block;
-            font-size: 16px;
-        }
-
-        .sidebar a:hover {
-            background-color: #575757;
-        }
-
-        /* Main Content */
-        .content {
-            width: 85%;
-            max-width: 1100px;
-            margin: auto;
-            padding: 15px;
-            margin-left: 200px;
-            text-align: center;
-        }
-
-        /* Header Image */
-        .header-img {
-            width: 100%;
-            height: 220px;
-            object-fit: cover;
-            border-radius: 6px;
-        }
-
-        /* Banner */
-        .banner {
-            font-size: 24px;
-            font-weight: bold;
-            color: #333;
-            padding: 12px;
-            text-align: center;
-        }
-
-        /* Hide content sections by default */
-        .section {
-            display: none;
-        }
-
-        #biography {
-            display: block;
-        }
-
-        /* Biography Layout */
-        .bio-container {
-            display: flex;
-            align-items: flex-start;
-            justify-content: center;
-            gap: 50px;
-        }
-        
-        .bio-text {
-            width: 65%;
-            max-width: 700px;
-            text-align: left;
+            padding: 10px 5px;
             font-size: 14px;
-            line-height: 1.4;
+            display: inline-block;
         }
 
-        /* Images */
-        .bio-container img {
-            width: 160px;
-            height: auto;
-            border-radius: 6px;
+        /* Content now full width */
+        .content {
+            margin-left: 0;
+            width: 100%;
+            max-width: 100%;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Header image scales down */
+        .header-img {
+            height: 150px;
+            border-radius: 4px;
+        }
+
+        /* Bio and research flex grids stack vertically */
+        .bio-container,
+        .bio-bottom-imgs,
+        .research-section,
+        .bio-text {
+            flex-direction: column !important;
+            width: 100% !important;
+            max-width: 100% !important;
+            text-align: left;
+            align-items: center;
+        }
+
+        .bio-container img,
+        .bio-bottom-imgs img,
+        .research-section img {
+            width: 100% !important;
+            height: auto !important;
         }
 
         .cycling-img {
-            width: 380px !important;
-            height: auto;
+            width: 100% !important;
         }
 
-        .bio-bottom-imgs {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin-top: 20px;
+        /* Research images spacing */
+        .research-section img {
+            margin-bottom: 15px;
         }
 
-        .bio-bottom-imgs img {
-            width: 180px;
-            height: auto;
-            border-radius: 6px;
+        /* Banner text shrinks slightly */
+        .banner {
+            font-size: 20px;
+            padding: 8px;
         }
 
-        /* Captions */
-        .caption {
-            font-size: 12px;
-            color: #555;
-            margin-top: 4px;
-            font-style: italic;
-        }
-
-        /* Research Sections */
-        .research-section {
-            text-align: left;
-            max-width: 750px;
-            margin: 25px auto;
-        }
-
-        .research-section h3 {
-            font-size: 18px;
-            color: #333;
-            border-bottom: 1px solid #0073b1;
-            padding-bottom: 4px;
-            margin-bottom: 8px;
-        }
-
-        /* Links Section */
-        .links-container {
-            text-align: center;
-            margin-top: 20px;
-        }
-
+        /* Links readable on mobile */
         .links-container a {
-            font-size: 14px;
-            display: block;
-            margin: 5px;
+            font-size: 16px;
         }
+    }
+</style>
 
-    </style>
     <script>
         function showSection(sectionId) {
             document.querySelectorAll('.section').forEach(section => {
